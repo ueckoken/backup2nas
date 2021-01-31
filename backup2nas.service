@@ -1,0 +1,8 @@
+[Unit]
+Description=Backup to NAS
+Requires=mnt-backup.mount
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/backup2nas
+

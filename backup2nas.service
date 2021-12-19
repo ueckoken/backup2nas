@@ -1,6 +1,7 @@
 [Unit]
 Description=Backup to NAS
 Requires=mnt-backup.mount
+After=mnt-backup.mount
 
 [Service]
 Type=oneshot

@@ -2,8 +2,7 @@
 
 set -eu
 
-HOSTNAME=$(hostname)
-
+# HOSTNAME is a shell variable
 mkdir -p "/mnt/backup/${HOSTNAME}"
 rsync -auvh --delete --progress /etc/ "/mnt/backup/${HOSTNAME}/etc"
 rsync -auvh --delete --progress /opt/ "/mnt/backup/${HOSTNAME}/opt"
